@@ -35,9 +35,13 @@ function concatName(frases) {
 // console.log(concatName(['captain', 'my', 'captain']));
 
 // Desafio 5
-function footballPoints() {
+function footballPoints(wins, ties) {
   // seu código aqui
+  calculoVitoria = wins * 3;
+  calculoEmpate = ties * 1;
+  return calculoVitoria + calculoEmpate;
 }
+// console.log(footballPoints(0, 0));
 
 // Desafio 6
 function highestCount() {
