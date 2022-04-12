@@ -21,24 +21,24 @@ function calcArea(base, height) {
 // Desafio 3
 function splitSentence(string) {
   // seu código aqui
-  let arrayDeStrings = string.split(' ')
+  let arrayDeStrings = string.split(' ');
   return arrayDeStrings;
 }
 
-//console.log(splitSentence("go Trybe"));
+// console.log(splitSentence("go Trybe"));
 
 // Desafio 4
 function concatName(frases) {
   // seu código aqui
-  return frases[frases.length -1] + ', ' + frases[0];
+  return frases[frases.length - 1] + ', ' + frases[0];
 }
 // console.log(concatName(['captain', 'my', 'captain']));
 
 // Desafio 5
 function footballPoints(wins, ties) {
   // seu código aqui
-  calculoVitoria = wins * 3;
-  calculoEmpate = ties * 1;
+  let calculoVitoria = wins * 3;
+  let calculoEmpate = ties * 1;
   return calculoVitoria + calculoEmpate;
 }
 // console.log(footballPoints(0, 0));
@@ -46,16 +46,16 @@ function footballPoints(wins, ties) {
 // Desafio 6
 function highestCount(numeros) {
   // seu código aqui
-  let numeroMaior = Math.max(...numeros)
+  let numeroMaior = Math.max(...numeros);
   let numeroMaiorVezes = 0;
- for (i = 0; i < numeros.length; i += 1) {
-    if (numeros[i] === numeroMaior){
+  for (let i = 0; i < numeros.length; i += 1) {
+    if (numeros[i] === numeroMaior) {
       numeroMaiorVezes += 1;
     }
   }
   return numeroMaiorVezes;
 }
-//console.log(highestCount([0, 0, 0]));
+// console.log(highestCount([0, 0, 0]));
 
 // Desafio 7
 function catAndMouse() {
