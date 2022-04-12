@@ -25,12 +25,14 @@ function splitSentence(string) {
   return arrayDeStrings;
 }
 
-console.log(splitSentence("go Trybe"));
+//console.log(splitSentence("go Trybe"));
 
 // Desafio 4
-function concatName() {
+function concatName(frases) {
   // seu código aqui
+  return frases[frases.length -1] + ', ' + frases[0];
 }
+// console.log(concatName(['captain', 'my', 'captain']));
 
 // Desafio 5
 function footballPoints() {
