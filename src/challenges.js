@@ -58,9 +58,21 @@ function highestCount(numeros) {
 // console.log(highestCount([0, 0, 0]));
 
 // Desafio 7
-function catAndMouse() {
+function catAndMouse(mouse, cat1, cat2) {
   // seu código aqui
+  let distanciaDoCat1Mouse = cat1 - mouse;
+  let distanciaDoCat2Mouse = cat2 - mouse;
+  if (Math.abs(distanciaDoCat1Mouse) < Math.abs(distanciaDoCat2Mouse)){
+    return "cat1";
+  } else if (Math.abs(distanciaDoCat2Mouse) < Math.abs(distanciaDoCat1Mouse)){
+    return "cat2";
+  } else if (Math.abs(distanciaDoCat2Mouse) === Math.abs(distanciaDoCat1Mouse)) {
+    return "os gatos trombam e o rato foge";
+  }
 }
+
+console.log(catAndMouse(1, 0, 2));
+
 
 // Desafio 8
 function fizzBuzz() {
