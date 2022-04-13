@@ -62,22 +62,40 @@ function catAndMouse(mouse, cat1, cat2) {
   // seu código aqui
   let distanciaDoCat1Mouse = cat1 - mouse;
   let distanciaDoCat2Mouse = cat2 - mouse;
-  if (Math.abs(distanciaDoCat1Mouse) < Math.abs(distanciaDoCat2Mouse)){
+  if (Math.abs(distanciaDoCat1Mouse) < Math.abs(distanciaDoCat2Mouse)) {
     return "cat1";
-  } else if (Math.abs(distanciaDoCat2Mouse) < Math.abs(distanciaDoCat1Mouse)){
+  } else if (Math.abs(distanciaDoCat2Mouse) < Math.abs(distanciaDoCat1Mouse)) {
     return "cat2";
   } else if (Math.abs(distanciaDoCat2Mouse) === Math.abs(distanciaDoCat1Mouse)) {
     return "os gatos trombam e o rato foge";
   }
 }
-
-console.log(catAndMouse(1, 0, 2));
+// console.log(catAndMouse(70, 72, 69));
 
 
 // Desafio 8
-function fizzBuzz() {
+function fizzBuzz(arrayFizzBuzz) {
   // seu código aqui
+  let StringsFizzBuzz = []
+  for (let i = 0; i < arrayFizzBuzz.length; i += 1) {
+    let divisivelPor3 = arrayFizzBuzz[i] % 3;
+    let divisivelpor5 = arrayFizzBuzz[i] % 5;
+    if (divisivelPor3 === 0 && divisivelpor5 === 0) {
+      StringsFizzBuzz.push('fizzBuzz');
+    } else if (divisivelpor5 === 0) {
+      StringsFizzBuzz.push('buzz');
+    } else if (divisivelPor3 === 0) {
+      StringsFizzBuzz.push('fizz');
+    } else if (divisivelPor3 !== 0 && divisivelpor5 !== 0) {
+      StringsFizzBuzz.push('bug!');
+    }
+//    console.log(divisivelPor3);
+//    console.log(divisivelpor5);
+  }
+  return StringsFizzBuzz;
 }
+// console.log(fizzBuzz([2, 15, 7, 9, 45]))
+
 
 // Desafio 9
 function encode() {
