@@ -141,9 +141,24 @@ function decode(stringDecode) {
 // console.log(decode('h3 th2r2!'))
 
 // Desafio 10
-function techList() {
+function techList(tech, name) {
   // seu código aqui
+  listaTechOrdenada = tech.sort();
+  let listaTech = []
+  if (tech[0] === undefined) {
+    return 'Vazio!';
+} else {
+  for (let i = 0; i < tech.length; i += 1) {
+      let objetoTech = {
+        tech: listaTechOrdenada[i],
+        name: name
+      }
+    listaTech.push(objetoTech);
+  }
 }
+return listaTech;
+}
+// console.log(techList(["Python", "DOM", "JavaScript"], "Gabriel"))
 
 module.exports = {
   calcArea,
